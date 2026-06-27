@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LearnHub (Nike Edition)</title>
+    <!-- Use Inter and Bebas Neue from Google Fonts for Nike Vibe -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/src/style.css" />
+  </head>
+  <body>
+    <!-- Top Utility Bar (Nike Style) -->
+    <div class="utility-bar">
+      <span>Find a Store &nbsp;&middot;&nbsp; Help &nbsp;&middot;&nbsp; Join Us &nbsp;&middot;&nbsp; Sign In</span>
+    </div>
+
+    <!-- Header & Navigation -->
+    <header class="primary-nav">
+      <div class="nav-container">
+        <div class="logo">LEARNHUB</div>
+        <nav class="nav-links">
+          <a href="#" class="nav-link active" data-tab="all">전체 앱</a>
+          <a href="#" class="nav-link" data-tab="category">카테고리</a>
+        </nav>
+        <div class="nav-actions">
+          <div class="search-container">
+            <input type="text" id="searchInput" class="search-pill" placeholder="앱 이름·태그로 검색..." />
+            <span class="search-shortcut">Cmd+K</span>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main Content Area -->
+    <main class="content-container">
+      <!-- 1. All Apps View -->
+      <section id="view-all" class="view-section active">
+        <h1 class="section-title">ALL APPS</h1>
+        <div class="grid-container" id="all-apps-grid">
+          <!-- Apps will be injected here -->
+        </div>
+      </section>
+
+      <!-- 2. Category View -->
+      <section id="view-category" class="view-section">
+        <h1 class="section-title">BY CATEGORY</h1>
+        <div class="category-layout">
+          <aside class="filter-sidebar" id="category-sidebar">
+            <!-- Categories will be injected here -->
+          </aside>
+          <div class="category-content" id="category-content">
+            <!-- Category sections will be injected here -->
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- App Launcher Modal (Fullscreen) -->
+    <div id="launcher-modal" class="modal-overlay hidden">
+      <div class="modal-content">
+        <div class="modal-header">
+          <input type="text" id="launcherSearchInput" class="launcher-search-input" placeholder="앱 검색..." />
+          <button id="closeLauncherBtn" class="button-icon-circular">✕</button>
+        </div>
+        <div class="launcher-grid" id="launcher-grid">
+          <!-- Launcher items will be injected here -->
+        </div>
+      </div>
+    </div>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

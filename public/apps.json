@@ -1,0 +1,59 @@
+{
+  "apps": [
+    {
+      "id": "fraction-calc",
+      "name": "분수 계산기",
+      "description": "분수 연산을 시각화로 학습",
+      "url": "https://example.com/fraction",
+      "icon": "fraction.svg",
+      "category": "수학",
+      "tags": ["계산", "초등", "시각화"],
+      "color": "#2563eb",
+      "createdAt": "2026-05-01"
+    },
+    {
+      "id": "english-words",
+      "name": "영어 단어장",
+      "description": "스마트한 간격 반복 영단어 학습",
+      "url": "https://example.com/english",
+      "icon": "english.svg",
+      "category": "영어",
+      "tags": ["영단어", "암기", "토익"],
+      "color": "#7c3aed",
+      "createdAt": "2026-05-10"
+    },
+    {
+      "id": "coding-playground",
+      "name": "코딩 놀이터",
+      "description": "브라우저에서 바로 파이썬 실행",
+      "url": "https://example.com/python",
+      "icon": "coding.svg",
+      "category": "코딩",
+      "tags": ["파이썬", "실습", "알고리즘"],
+      "color": "#0891b2",
+      "createdAt": "2026-05-15"
+    },
+    {
+      "id": "science-sim",
+      "name": "물리 시뮬레이터",
+      "description": "다양한 물리 법칙을 시각적으로 체험",
+      "url": "https://example.com/science",
+      "icon": "science.svg",
+      "category": "과학",
+      "tags": ["물리", "시뮬레이션", "중고등"],
+      "color": "#059669",
+      "createdAt": "2026-06-01"
+    },
+    {
+      "id": "history-timeline",
+      "name": "역사 타임라인",
+      "description": "한눈에 보는 한국사 연표",
+      "url": "https://example.com/history",
+      "icon": "history.svg",
+      "category": "역사",
+      "tags": ["한국사", "연표", "암기"],
+      "color": "#b45309",
+      "createdAt": "2026-06-10"
+    }
+  ]
+}
