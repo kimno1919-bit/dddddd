@@ -12,6 +12,7 @@ async function init() {
     setupSearch();
     setupLauncher();
     setupFooterModals();
+    setupEthicsGate();
   } catch (err) {
     console.error("앱 데이터를 불러오는데 실패했심더:", err);
   }
@@ -248,6 +249,28 @@ function setupFooterModals() {
   // 모달 배경 클릭 시 닫기
   modal.addEventListener('click', (e) => {
     if (e.target === modal) closeModal();
+  });
+}
+
+function setupEthicsGate() {
+  const gate = document.getElementById('ethics-gate');
+  const agreeBtn = document.getElementById('btn-agree-ethics');
+  
+  // LocalStorage 확인
+  const hasAgreed = localStorage.getItem('ethicsAgreed');
+  
+  if (!hasAgreed) {
+    // 동의한 적 없으면 보여주기
+    gate.classList.remove('hidden');
+    // 뒤에 스크롤 방지
+    document.body.style.overflow = 'hidden';
+  }
+  
+  agreeBtn.addEventListener('click', () => {
+    // 동의 처리
+    localStorage.setItem('ethicsAgreed', 'true');
+    gate.classList.add('hidden');
+    document.body.style.overflow = '';
   });
 }
 

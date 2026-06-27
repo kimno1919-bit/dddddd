@@ -483,6 +483,106 @@ a {
 .terms-modal-body h2 { font-size: 20px; margin-top: 24px; margin-bottom: 8px; }
 .terms-modal-body p { margin-bottom: 12px; }
 
+/* Ethics Gate */
+.ethics-gate-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--color-canvas); /* 차분한 하얀 바탕 */
+  z-index: 99999;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* 스크롤 가능하게 위에서 시작 */
+  overflow-y: auto;
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+.ethics-gate-overlay.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.ethics-gate-content {
+  width: 100%;
+  max-width: 800px;
+  padding: 64px var(--space-section);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xl);
+}
+
+.ethics-title {
+  font-family: 'Helvetica Now Display Medium', var(--font-ui);
+  font-size: 40px;
+  font-weight: 700;
+  color: var(--color-ink);
+  text-align: center;
+  margin-bottom: var(--space-sm);
+}
+
+.ethics-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-lg);
+}
+
+.ethics-item {
+  background-color: var(--color-soft-cloud);
+  padding: var(--space-lg);
+  border-radius: var(--rounded-lg);
+  color: var(--color-ink);
+}
+
+.ethics-item h2 {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 8px;
+  color: var(--color-ink);
+}
+
+.ethics-item p {
+  font-size: 15px;
+  line-height: 1.6;
+  color: var(--color-ink);
+}
+
+.ethics-item p strong {
+  font-weight: 600;
+  display: block;
+  margin-bottom: 4px;
+}
+
+.ethics-action {
+  display: flex;
+  justify-content: center;
+  margin-top: var(--space-xl);
+  padding-bottom: 64px;
+}
+
+.button-primary {
+  background-color: var(--color-ink);
+  color: var(--color-canvas);
+  font-family: var(--font-ui);
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  border-radius: var(--rounded-full);
+  padding: 16px 32px;
+  cursor: pointer;
+  transition: transform 0.1s, opacity 0.1s;
+}
+
+.button-primary:hover {
+  opacity: 0.9;
+}
+
+.button-primary:active {
+  transform: scale(0.96);
+}
+
 /* Responsive */
 @media (max-width: 1024px) {
   .section-title {
