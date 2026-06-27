@@ -57,6 +57,21 @@
       </section>
     </main>
 
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-container">
+        <div class="footer-links">
+          <button class="footer-link" id="btn-terms">이용약관</button>
+          <span class="footer-divider">|</span>
+          <button class="footer-link" id="btn-privacy">개인정보처리방침</button>
+        </div>
+        <div class="footer-copy">
+          &copy; 2026 LearnHub. All rights reserved. <br/>
+          정보관리책임자: 김재현
+        </div>
+      </div>
+    </footer>
+
     <!-- App Launcher Modal (Fullscreen) -->
     <div id="launcher-modal" class="modal-overlay hidden">
       <div class="modal-content">
@@ -66,6 +81,19 @@
         </div>
         <div class="launcher-grid" id="launcher-grid">
           <!-- Launcher items will be injected here -->
+        </div>
+      </div>
+    </div>
+
+    <!-- Terms/Privacy Modal -->
+    <div id="terms-modal" class="modal-overlay hidden">
+      <div class="modal-content terms-modal-content">
+        <div class="modal-header">
+          <h2 id="terms-modal-title" class="terms-modal-title">약관</h2>
+          <button id="closeTermsBtn" class="button-icon-circular">✕</button>
+        </div>
+        <div id="terms-modal-body" class="terms-modal-body">
+          <!-- Content injected here -->
         </div>
       </div>
     </div>
